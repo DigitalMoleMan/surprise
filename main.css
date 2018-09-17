@@ -1,0 +1,82 @@
+* {
+    user-select: none;
+}
+
+body {
+    background-color: #222;
+}
+
+main {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    top: 35%;
+    width: fit-content;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .5) inset;
+    background-color: #333;
+    border-radius: 5rem;
+    animation: 2s Min ease;
+}
+
+@keyframes Min {
+    from {
+        top: -20%;
+        opacity: 0%;
+    }
+
+    to {
+        top: 35%;
+        opacity: 100%;
+    }
+}
+
+#surpriseButton {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem;
+    width: fit-content;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .5);
+    background-color: rgb(32, 128, 64);
+    border-radius: 10rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    line-break: loose;
+    text-align: center;
+    color: #fff;
+    animation: 1.5s Bin;
+    transition: .1s ease;
+}
+
+@keyframes Bin {
+    from {
+        margin: 2rem;
+        padding: 0rem;
+        color: rgb(32, 128, 64);
+    }
+
+    to {
+        margin: 0rem;
+        padding: 2rem;
+        color: #fff;
+    }
+}
+
+#surpriseButton:hover {
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, .5);
+    background-color: rgb(64, 160, 96);
+    color: #fff;
+    cursor: pointer;
+    transition: .1s ease;
+}
+
+#surpriseButton:active {
+    background-color: rgb(32, 96, 32);
+    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, .5);
+    cursor: auto;
+    transition: .1s ease;
+
+}
